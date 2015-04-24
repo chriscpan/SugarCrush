@@ -19,15 +19,22 @@
       var ctx = canvasEl.getContext('2d');
 
       // var gameView = new window.Asteroids.GameView(ctx, canvasEl.width, canvasEl.height);
-      // gameView.start();
-      var asteroid = new window.Asteroids.MovingObject({
-        pos: [50, 50],
-        vel: [10, 10],
+      var gameView = new window.Asteroids.GameView({
+        ctx: ctx,
+        height: canvasEl.height,
+        width: canvasEl.width
       });
 
-      asteroid.draw(ctx);
-      asteroid.move();
-      asteroid.draw(ctx);
+      gameView.start();
+      // gameView.start();
+      // var asteroid = new window.Asteroids.MovingObject({
+      //   pos: [50, 50],
+      //   vel: [10, 10],
+      // });
+      //
+      // asteroid.draw(ctx);
+      // asteroid.move();
+      // asteroid.draw(ctx);
     </script>
 
 
