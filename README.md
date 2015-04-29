@@ -1,6 +1,6 @@
 # Asteroids!
 
-[Live Demo Link] : [link]
+[Live Demo Link][link]
 
 [link]: chriscpan.github.io/asteroids
 
