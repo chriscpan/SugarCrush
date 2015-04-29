@@ -2,10 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/index.css" type="text/css">
+
     <title>Asteroids</title>
   </head>
   <body>
-    <canvas></canvas>
+    <!-- <img id="asteroids" src="http://www.w3.org/html/logo/img/mark-word-icon.png" /> -->
+    <canvas class="canvas"></canvas>
     <script src="lib/keymaster.js"></script>
     <script src="lib/utils.js"></script>
     <script src="lib/movingObject.js"></script>
@@ -16,11 +19,10 @@
     <script src="lib/gameView.js"></script>
     <script>
       var canvasEl = document.getElementsByTagName("canvas")[0];
-      canvasEl.height = window.innerHeight;
-      canvasEl.width = window.innerWidth;
+      canvasEl.height = window.innerHeight * .8;
+      canvasEl.width = window.innerWidth * .8;
       var ctx = canvasEl.getContext('2d');
 
-      // var gameView = new window.Asteroids.GameView(ctx, canvasEl.width, canvasEl.height);
       var gameView = new window.Asteroids.GameView({
         ctx: ctx,
         height: canvasEl.height,
@@ -28,20 +30,7 @@
       });
 
       gameView.start();
-      // gameView.start();
-      // var asteroid = new window.Asteroids.MovingObject({
-      //   pos: [50, 50],
-      //   vel: [10, 10],
-      // });
-      //
-      // asteroid.draw(ctx);
-      // asteroid.move();
-      // asteroid.draw(ctx);
+
     </script>
-
-
-
-    <script src=></script>
-    <script src=></script>
   </body>
 </html>
