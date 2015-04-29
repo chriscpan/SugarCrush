@@ -2,7 +2,7 @@
 
 [Live Demo Link][link]
 
-[link]: chriscpan.github.io/asteroids
+[link]: http://chriscpan.github.io/asteroids
 
 
 ## Project Description
