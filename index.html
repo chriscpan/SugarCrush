@@ -23,10 +23,11 @@
       canvasEl.width = window.innerWidth * 0.8;
       var ctx = canvasEl.getContext('2d');
 
-      var audio = new Audio('audio/candy-crush-soda.mp3');
-      audio.addEventListener('ended', function() {
+      window.audio = new Audio('audio/candy-crush-soda.mp3');
+      window.audio.addEventListener('ended', function() {
         this.play();
       }, false);
+  
       audio.play();
       var gameView = new window.Asteroids.GameView({
         ctx: ctx,
