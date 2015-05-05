@@ -1,4 +1,4 @@
-# Asteroids!
+# Sugar Crush!
 
 [Live Demo Link][link]
 
